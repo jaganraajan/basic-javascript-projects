@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+.container{
+    padding: 50px 20px;
+    display: flex;
+}
+
+.card{
+    flex: 1;
+    border-radius: 25px;
+    height: 90vh;
+    margin: 5px;
+}
+
+h1{
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+}
+
+.active{
+    flex: 10;
+    transition: all 1s;
+}
+
+.fade{
+    transition: all 1s;
+}
+
+.inactive{
+    /* display: none; */
+    opacity: 0%;
+}
+
+.activeH{
+    opacity: 100%;
+    transition: all 2s;
+}

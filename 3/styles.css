@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    border-radius: 50%;
+    position: fixed;
+    top: -50px;
+    left: -60px;    
+}
+
+.sticky {
+    position: fixed;
+    top: -60px;
+    left: -60px;
+}
+/* 
+header i {
+    background-color:white;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(70px, 70px);
+    margin-bottom: 5px;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:grey;
+}
+
+.container {
+    background-color:white;
+    padding: 40px; 
+    transition: 0.4s ease-in;  
+    transform-origin: top left;
+}
+
+.rotate {
+    transform: rotateZ(-15deg);
+    transition: 0.4s ease-in;
+}
+
+.dog-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#menu {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    height: 100%;
+    margin-top:auto;
+    z-index: -1;
+}

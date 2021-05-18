@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+
+.container{
+    background-color: olive;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-bar {
+    position: relative;
+    bottom: 0;
+}
+
