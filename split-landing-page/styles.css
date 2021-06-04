@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.console {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    
+}
+
+.console h1{
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+
+#playstation {
+    background: linear-gradient(rgba(70, 58, 233, 0.5), rgba(0,0,0,.5)), url("https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+
+}
+
+.active {
+    flex: 3;
+    transition: 0.4s ease-in;
+}
+
+.inactive {
+    flex: 1;
+    transition: 0.4s ease-in;
+}
+
+#xbox {
+    background: linear-gradient(rgba(6, 94, 35, 0.5), rgba(0,0,0,.5)), url("https://images.unsplash.com/photo-1604586376807-f73185cf5867?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+    
+}
+
+.button {
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    background-color:transparent;
+    text-transform: uppercase;
+}
+
+#playstation > .button:hover {
+    background-color: rgb(30, 19, 182);
+    border-color: rgb(30, 19, 182);
+    transition: 0.2s linear;
+}
+
+#xbox > .button:hover {
+    background-color: rgb(9, 82, 15);
+    border-color: rgb(9, 82, 15);
+    transition: 0.2s linear;
+}
